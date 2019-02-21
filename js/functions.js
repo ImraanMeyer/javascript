@@ -25,8 +25,10 @@ function sayHello() {
 }
 
 console.log("Start of Program"); // just for example purposes
+
 let result = sayHello();
 console.log(result);
+
 console.log("End of Program");
 
 /* === 
