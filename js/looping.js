@@ -6,11 +6,21 @@ console.log("end program");
 // while loops - loops through a block of code while a specified condition is true
 // for loops -  loops through a block of code a number of times
 
-let number = 1;
+// let number = 1;
+// while (number <= 10) {
+//     console.log (number);
+//     number++;
+// }
+
+console.log("NEW LOOP");
+
+let number = 2;
 while (number <= 10) {
     console.log (number);
     number++;
 }
+
+console.log("END LOOP");
 
 // basic syntax 
 
@@ -41,16 +51,19 @@ for  (initialization; condition; final-expression) {
 
 // This is a little more complicated than the while loop syntax:
 
-// Initializatio only happens once, when the code first kicks off
+// Initialization only happens once, when the code first kicks off
 
 // The condition is evaluated once before the loop runs each time. If it's true, the code runs. If not, the code doesnt run.
 
 // The final expression is evaulated after the loop runs each time. It's often used to update a counter variable, as we saw in the while loop example. 
 
+console.log("START 'FOR' LOOOP");
+
 for (let counter = 1; counter <= 5; counter+1) {
     console.log(counter);
 }
 
+console.log("END 'FOR' LOOP");
 /* === which loop should i use? === */
 
 let letter = "";
@@ -58,3 +71,5 @@ while (letter !=="X") {
     letter = prompt("Type any letter of X to exit:");
     console.log(letter);
 }
+
+

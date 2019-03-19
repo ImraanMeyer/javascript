@@ -1,7 +1,7 @@
 console.log("Hello JavaScript");    
 
 let name    =   " Imraan";
-    surname =   " Meyer"
+    surname =   " Meyer";
     age     =   " 21";
     gender  =   " Male";
     message =   "Good Morning";

@@ -7,15 +7,100 @@
     <title>Javascript</title>
 
     <style>
+        body {
+            margin: 12em auto;
+            text-align: left;
+        }
+        #text {
+            border-radius: 1em;
+            padding: 1em;
+            width: 70px;
+            background: #3d7aa5;
+            border: none;
+            outline: none;
+        }
+
+        #test {
+            display: none;
+            place-content: center;
+            margin: 1em auto;
+            border-radius: .6em;
+        }
+
+        label{
+            display: block;
+            margin: 1em 0 ;
+        }
+
+        .btn {
+            background: #3d7aa5;
+            /* color: ; */
+            padding: 1em;
+            border-radius: .6em; 
+            border: none;
+
+        }
         
     </style>
 </head>
 <body>
     
-    <script src="js/objects.js"></script>
+
+    <form action="">
+        <div class="form-group">
+            <label for="password-input"> Password </label>
+            <input type="password" id="password-input" class="form-control">
+            <small>
+                Please enter a password between 6 and 12 characters
+            </small>
+        </div>
+
+        <div class="form-group">
+            <label for="confirm-password"> Please confirm your password </label>
+            <input type="password" id="confirm-password">
+
+            <small style="display: none" id="error-message">
+                Both password fields must match.
+            </small>
+
+        </div>      
+
+        <button type="submit" id="submit-button" class="btn btn-primary" disabled="true">
+            Submit
+        </button>
+    </form>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- This is for manipuplating-dom lesson --> 
+        <!-- <p id="test">Presto Change-o!</p>
+        <button id="text" onclick="textDisplay() + changeColor('yellow')" ondblclick="changeColor('red')">
+            Yolo
+        </button> -->
+
+
+    
+
+    <script src="js/form-handling.js"></script>
+    <!-- <script src="js/manipuplating-dom.js"></script> -->
+    <!-- <script src="js/array.js"></script> -->
+    <!-- <script src="js/constructor-functions.js"></script> -->
+    <!-- <script src="js/objects-and-protoypes.js"></script> -->
+    <!-- <script src="js/objects.js"></script> -->
     <!-- <script src="js/functions.js"></script> -->
     <!-- <script src="js/looping.js"></script> -->
     <!-- <script src="js/nate-task.js"></script> -->
+    <!-- <script src="js/conditions.js"></script> -->
     <!-- <script src="js/main.js"></script> -->
 </body>
 </html>

@@ -10,11 +10,29 @@
  sayHello();    //calling the function
  console.log("End of Program");
 
+
+// new example made 
+console.log("START OF NEW FUNCTION");
+
+ function sayHi() {
+     console.log("Hi!");
+ }
+ sayHi();
+
+console.log("END OF NEW FUNCTION");
+
  // Declaring a function
 
  // Creating a function
 
+/* 
 
+basic syntax of a function!
+
+ function name(parameter1, parameter2, parameter3) {
+    // code to be executed
+  }
+*/
 
 
 
@@ -31,6 +49,17 @@ console.log(result);
 
 console.log("End of Program");
 
+
+console.log("NEW EXAMPLE")
+
+function sayHi() {
+    return "Hi! My name Jeff";
+}
+
+let result2 = sayHi();
+console.log(result2);
+
+console.log("END OF EXAMPLE");
 /* === 
 
 // Declare myFunction
@@ -71,6 +100,7 @@ console.log(message());
 // declare a variable inside the function the variable name to be message
 // the function should display Hello, name of the person
 
+/* ------------ S T A R T --------- */
 console.log("start");
 
 function sayHello(firstName, lastName) {
@@ -82,12 +112,14 @@ console.log(sayHello("Steve"," Rogers" ));
 
 
 console.log("end");
+/* --------------- E N D ----------- */
 
-/* --------------- END ----------- */
+console.log("using 'length' to count characters");
 
-message = "Hello there\n"
+message = "Hello there\n";
 console.log(message + "JavaScript is not JAVA" .length);
 
+console.log("E N D");
 
 
 let animal      = ["cat", "dog", "cow"];

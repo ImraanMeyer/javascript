@@ -18,6 +18,24 @@ console.log(pen.brand, pen.color, pen.type);
 
 console.log("end ----------");
 
+
+//new example of a object 
+
+let cat = {
+    type: "fluffy",
+    color: "grey and white",
+    name: "Gucci"
+};
+
+console.log("start new object");
+
+console.log(cat.type, cat.color,cat.name);
+
+console.log("end new object");
+
+// The example above explains object of a cat which has different charecteristics eg; type, color, name 
+
+
 // The above code defines a variable named pen whose values is an object: you can therefore say pen is an object. This object has three properties: type, color and brand. Each property has a name and a value and is separated by a comma, (except the last one).
 
 
@@ -53,6 +71,8 @@ console.log("end ----------");
 
 // We had to write lengthy console.log statements each time to show the cake descrition. There is a cleaner way to acclompish that.
 
+// The return statement ends the execution of a function in a JS environment and its used to specify a value (object, array, variables) to be returned to the function's caller scope.
+
 // Adding a method to a object 
 
 // Describe a cake
@@ -65,6 +85,18 @@ function describe(cake) {
 console.log(describe(cake));
 
 console.log("end ----------");
+
+console.log("start new object [ABOUT CAT] ----");
+// function using example cat
+
+function describeCat(cat) {
+    let catDescribe = "The fat " + cat.type + " cat sat on the window sill." + " He was " + cat.color + " and his name is " + cat.name;
+    return catDescribe;
+}
+
+console.log(describeCat(cat));
+
+console.log("end new object [ABOUT CAT] ----");
 
 // The function describe() takes an object as a parameter. We pass it the cake, and it access that object's properties and prints them out in that sentence.
 
@@ -93,6 +125,34 @@ cake2.occasion  =   "wedding";
 console.log(cake2.describe());
 
 console.log("end ----------");
+
+
+// using above script with my own object 
+console.log("start new object (alt method)[ABOUT CAT] ----");
+
+let cat2 = {
+    type: "Furry",
+    color: "Ginger",
+    name: "Otis",
+    
+    catDescribe2: function (){
+        let fluffyCat = "The fat " + this.type + " cat sat on the window sill." + " He was " + this.color + " and his name is " + this.name;
+        return fluffyCat;
+    }
+};
+
+console.log(cat2. catDescribe2());
+
+
+//changing the time of cat of name of the cat without scrolling all the way up to change the variable ..
+cat2.name = "Kurapika";
+cat2.color = "Black";
+
+console.log(cat2.catDescribe2());
+
+console.log("end new object (alt method) [ABOUT CAT] ----");
+
+
 
 // Now our object has a new property available to it describe. The value of this property is a function that returns a text description of the cake.
 
